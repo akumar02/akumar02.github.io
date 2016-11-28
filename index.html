@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript" src="test.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	    <div class="header">
+			<div class="left">
+        <!-- image should be here <img src="#" width="110" height="65"> -->
+			</div>
+			<div class="right">
+				<p><font size="4"><b>Ashwini Kumar</b></font><br><b>Web Developer and Data Analyst</b></p>
+			</div>
+		</div>
+
+
+
+<!-- parallex coading-->
+
+<div class="parallax">
+  <center>
+    <h3>Hello, i am Ashwini Kumar and i am persuing B-Tech from UPES Dehradun in CSE. I am Currently in 3 year and highly dedicated to Web-Development(Full-Stack) and Data Science.
+    </h3>
+  </center>
+</div>
+  <!-- for the paralle data <div style="height:200px;background-color:#00a087;font-size:20px"></div> -->
+
+<!-- parallex coading ends here -->
+
+<div id="navbar">
+  <center>
+    <ul>
+      <li><button id="Btn" class="but"><b>Education</b></button></li> <!-- eduation model -->
+      <li><button onclick="normal()" class="but"><b>Skills</b></button></li> <!--- skills model -->
+      <li><a href="Resume.pdf"><button class="but"><b>Resume</b></button></a></li>
+      <li><a href="email.html"><button class="but"><b>Contact Me</b></button></a></li>
+    </ul>
+  </center>
+</div>
+
+<!-- Trigger/Open The Modal -->
+
+<!-- eduacation content -->
+
+
+<!-- The Modal -->
+<div id="Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="end">×</span>
+        <center><h2>Education</h2></center><hr>
+
+        <center>
+        <table>
+    		<tr>
+    			<th>Class</th><th>School</th><th>Percentage/CGPA</th>
+    		</tr>
+    		<tr>
+    			<td><center>10</center></td><td><center>PPJSV Nainital(U.K)<center></td><td><center>9.4<center></td>
+    		</tr>
+    		<tr>
+    			<td><center>12<center></td><td><center>Public School(Darbhanga)<center></td><td><center>78%<center></td>
+    		</tr>
+    		<tr>
+    			<td><center>College<center></td><td><center>UPES Dehradun(U.K)<center></td><td><center>2.75<center></td>
+    		</tr>
+    	</table>
+        </center>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('Modal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("Btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("end")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<br>
+<!--- education modal ends here-->
+
+
+<div id="myDIV">
+    <center>
+          <h2>Programming Language</h2>
+          C, Php, C++, JavaScript, Java, Html5, Css, Python.<br>
+          <h2>Technology</h2>
+          Big Data, Hadoop.<br>
+          <h2>Operating System</h2>
+          Linux, Windows.<br>
+          <h2>Database</h2>
+          Mysql.<br>
+          <h2>Proficient In</h2>
+          Web-Development, Algorithm, DataStructure.<br>
+    </center>
+</div>
+
+
+
+<script>
+function normal() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+<br>
+
+<br>
+<!--- Projects -->
+
+<h1><center>Projects</center></h1>
+<div class="project">
+     <div class="first">
+      <center><p>Analysis of Text File Compression Algorithm</p>
+      <center>The Aim of the project is to Analyze two Text-file Compression Algorithm, i.e Huffman Code and Liv-zempel. <a href="https://github.com/akumar02/compression">More</a></center>
+    </div>
+     <div class="second">
+      <center><p>Social Networking Site</p>
+      Creating a Social Newtworking Site using the Php and Mysql.</center>
+    </div>
+     <div class="third">
+      <center><p>Restaurant Review</p>
+      Creating a Restaurant Review application using the JavaScript.</center>
+     </div>
+</div>
+
+
+
+<!--- footer parts -->
+<div class="footer">
+  <center>
+    <a href="https://github.com/akumar02"><img src="glogo.jpg" width="35" height="35"></a>
+    &nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/akumar02?trk=nav_responsive_tab_profile"><img src="llogo.png" width="35" height="35"></a>
+  </center>
+  <center>Developed and Designed by : <font size="3" color="#FF5733">Ashwini Kumar</center>
+</div>
+
+
+
+
+</body>
+</html>

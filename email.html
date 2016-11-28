@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="email.css">
+</head>
+<body>
+	<a href="test.html">Back to Main</a>
+	<div align="center" class="outer">
+		<div class="middle">
+			<div class="inner">
+				<form action="mailto:kumarashwini712@gmail.com" method="post" enctype="text/plain" name="myForm" onsubmit="validate();">
+					<fieldset>
+						<legend>Contact Me</legend>
+						<p>Name : <input type="text" name="name"></p>
+						<p>Email : <input type="text" name="email"></p>
+						<p>Message : <textarea name="message"></textarea></p>
+						<p><input type="submit" value="submit">
+						   <input type="reset" value="reset"></p>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	function validate()
+	{
+		if( document.myForm.Name.value == " " )
+         {
+            alert( "Please provide your name!" );
+            return false;
+         }
+
+         if( document.myForm.email.value == " " )
+         {
+            alert( "Please provide your Email!" );
+            return false;
+         }
+
+         if( document.myForm.email.value == " " )
+         {
+            alert( "Please provide a zip in the format #####." );
+            return false;
+         }
+
+         return( true );
+     }
+	</script>
+</body>
+</html>
